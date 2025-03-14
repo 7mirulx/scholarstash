@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="scholarstash.KeyInSpending"
+             Title="">
+    <ScrollView>
+        <VerticalStackLayout
+        Padding="30,0"
+        Spacing="25">
+            <Frame Margin="0, 20, 0, 0" BackgroundColor="#1814dc" HeightRequest="100" HasShadow="True" BorderColor="#1814dc" CornerRadius="20">
+                <Label Margin="0" Text="Key in your spending" TextColor="White" FontSize="20" HorizontalOptions="Center" VerticalOptions="Center"/>
+            </Frame>
+
+            <Label Text="Spending Amount :" HorizontalTextAlignment="Center" Margin="0,20,0,0" TextColor="Black"  FontAttributes="Bold" HorizontalOptions="Start"/>
+            <Frame BackgroundColor="#ECECEC" BorderColor="#ECECEC" CornerRadius="5" Padding="5" HasShadow="True">
+                <Entry x:Name="amountEntry" Placeholder="Enter amount" HorizontalTextAlignment="Center" TextColor="Black" Keyboard="Numeric" />
+            </Frame>
+
+            <Label Text="Date :" HorizontalTextAlignment="Center" Margin="0,20,0,0" TextColor="Black"  FontAttributes="Bold" HorizontalOptions="Start"/>
+            <Frame BackgroundColor="#ECECEC" BorderColor="#ECECEC" CornerRadius="5" Padding="5" HasShadow="True">
+                <DatePicker x:Name="datePicker" HorizontalOptions="Center" TextColor="Black" Format="dd/MM/yyyy"/>
+            </Frame>
+
+            <Label Text="Purpose of Spending :" HorizontalTextAlignment="Center" Margin="0,20,0,0" TextColor="Black"  FontAttributes="Bold" HorizontalOptions="Start" />
+            <Frame BackgroundColor="#ECECEC" BorderColor="#ECECEC" CornerRadius="5" Padding="5" HasShadow="True">
+                <Picker x:Name="purposePicker" HorizontalTextAlignment="Center" TextColor="black" >
+                <Picker.ItemsSource>
+                    <x:Array Type="{x:Type x:String}">
+                        <x:String>Food Expense</x:String>
+                        <x:String>Transportation</x:String>
+                        <x:String>Shopping</x:String>
+                    </x:Array>
+                </Picker.ItemsSource>
+            </Picker>
+            </Frame>
+            <HorizontalStackLayout Spacing="10">
+                <Button Text="Reset" Clicked="OnReset" TextColor="Black" WidthRequest="150" BackgroundColor="#ECECEC" Margin="0,30,0,0" x:Name="resetButton"/>
+                <Button Text="Save" Clicked="SaveButton" TextColor="White" WidthRequest="150" BackgroundColor="Black" Margin="0,30,0,0"/>
+            </HorizontalStackLayout>
+            
+
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>

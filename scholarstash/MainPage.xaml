@@ -1,0 +1,69 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+             xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             Title="Scholar Stash"
+             xmlns:control="clr-namespace:Syncfusion.Maui.Charts;assembly=Syncfusion.Maui.Charts"
+             xmlns:local="clr-namespace:scholarstash"
+             x:Class="scholarstash.MainPage">
+    
+    <ScrollView>
+        <VerticalStackLayout 
+            Padding="30,0"
+            Spacing="25">
+            <Frame Margin="0, 20, 0, 0" BackgroundColor="#1814dc" FlexLayout.AlignSelf="Center" HeightRequest="200" BorderColor="#1814dc" CornerRadius="20">
+                <HorizontalStackLayout>
+                    <VerticalStackLayout>
+                        <Label Margin="0, 10, 0, 0" Text="Total Spending" TextColor="White" FontSize="15"/>
+                        <Label Margin="-10, 30, 0, 0" x:Name="totalExpensesLabel" TextColor="White" FontSize="60"/>
+                    </VerticalStackLayout>
+                    <ImageButton Source="whiterefresh.png" Clicked="RefreshTotalExpensesImageButtonClicked" WidthRequest="60" HeightRequest="60" VerticalOptions="Center" HorizontalOptions="End" Margin="40, 20, 0, 0"/>
+                </HorizontalStackLayout>
+               
+            </Frame>
+            <Frame Margin="0, 5, 0, 0" BackgroundColor="#F6F6F6" FlexLayout.AlignSelf="Center" HeightRequest="110" BorderColor="#EFEDFF" CornerRadius="20">
+                <VerticalStackLayout>
+                    <StackLayout>
+                        <Label x:Name="highestCategoryLabel" Margin="0,10 ,0 ,0" FontSize="20" VerticalOptions="Center" HorizontalOptions="Start" TextColor="black" WidthRequest="180" FontAttributes="Bold"/>
+                    </StackLayout>
+                    <ImageButton Source="refresh.png" Clicked="RefreshCategoryImageButtonClicked" WidthRequest="60" HeightRequest="60" VerticalOptions="Center" HorizontalOptions="End" Margin="0, -50, 0, 0"/>
+
+                </VerticalStackLayout>
+            </Frame>
+            <Frame Margin="0, -10, 0, 0" BackgroundColor="#F6F6F6" FlexLayout.AlignSelf="Center" HeightRequest="110" BorderColor="#EFEDFF" CornerRadius="20">
+                <VerticalStackLayout>
+                    <StackLayout>
+                        <Label x:Name="highestDateLabel"  Margin="0,10 ,0 ,0" FontSize="20" VerticalOptions="Center" HorizontalOptions="Start" TextColor="black" WidthRequest="180" FontAttributes="Bold"/>
+                    </StackLayout>
+                    <ImageButton Source="refresh.png" Clicked="RefreshDateImageButtonClicked" WidthRequest="60" HeightRequest="60" VerticalOptions="Center" HorizontalOptions="End" Margin="0, -50, 0, 0"/>
+                </VerticalStackLayout>
+            </Frame>
+            <HorizontalStackLayout Spacing="10" HorizontalOptions="Center" Margin="0,50,0,0">
+                
+                <Button 
+                    x:Name="Record"
+                    Text="Expenses History"
+                    Clicked="RecordedSpendingPageButton" 
+                    FontSize="17"
+                    BackgroundColor="#ECECEC"
+                    FontAttributes="Bold"
+                    TextColor="Black"
+                    WidthRequest="150"
+                    />
+                <Button 
+                    x:Name="KeyIn"
+                    Text="+ New Expense"
+                    Clicked="KeyInSpendingPageButton" 
+                    BackgroundColor="Black"
+                    TextColor="White"
+                    FontAttributes="Bold"
+                    FontSize="17"
+                    WidthRequest="150"
+                    />
+            </HorizontalStackLayout>
+
+
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>

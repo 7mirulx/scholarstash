@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Shell 
+    x:Class="scholarstash.AppShell"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:local="clr-namespace:scholarstash"
+    Shell.FlyoutBehavior="Flyout"
+    Title="scholarstash"
+    TitleColor="black"
+    BackgroundColor="white"
+    FlyoutBackgroundColor="DarkGrey"
+    >
+
+
+    <ShellContent
+        Title="Home"
+        ContentTemplate="{DataTemplate local:MainPage}"
+        Route="MainPage" 
+        Icon="home.png"
+        />
+    <ShellContent
+        Title="Spending Record"
+        ContentTemplate="{DataTemplate local:SpendingRecord}"
+        Route="SpendingRecord" 
+        Icon="record.png"/>
+    <ShellContent
+        Title="Key In Spending"
+        ContentTemplate="{DataTemplate local:KeyInSpending}"
+        Route="KeyInSpending" 
+        Icon="spending.png"/>
+    <ShellContent
+    Title="About"
+    ContentTemplate="{DataTemplate local:About}"
+    Route="About" 
+    Icon="spending.png"/>
+
+
+</Shell>

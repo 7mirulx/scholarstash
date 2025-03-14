@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="scholarstash.About"
+             Title="About">
+    <VerticalStackLayout Padding="30,0"
+Spacing="25">
+        <Frame Margin="0, 20, 0, 0" BackgroundColor="#1814dc" FlexLayout.AlignSelf="Center" HeightRequest="400" BorderColor="#1814dc" CornerRadius="20" Opacity="0.9">
+            <HorizontalStackLayout>
+                <VerticalStackLayout>
+                    <Label Margin="0,10,0,0" Text="Introducing ScholarStash" FontSize="20" FontAttributes="Bold"/>
+                    <Label WidthRequest="285" TextColor="White" FontSize="17" Margin="0,20,0,0" Text="Introducing ScholarStash: a cutting-edge mobile application engineered to revolutionize how students navigate their allowances. Beyond mere expense tracking, ScholarStash boasts a suite of features designed to empower students with financial prowess effortlessly. Picture this: budgeting tools that adapt to your spending patterns, intuitive reminders that anticipate your financial needs, and insights that illuminate your path to financial freedom. Our mission? To ignite a financial revolution among students, equipping them with the knowledge and tools to sculpt a prosperous tomorrow. Ready to embark on a journey where financial empowerment meets innovation? Join the ScholarStash movement and unlock the gateway to a brighter financial future." >
+                        <Label.FormattedText>
+                            <FormattedString>
+                                <Span Text=" A cutting-edge mobile application engineered to revolutionize how students navigate their allowances. "/>
+                                <Span Text="Beyond mere expense tracking, ScholarStash boasts a suite of features designed to empower students with financial prowess effortlessly. "/>
+                                <Span Text="Picture this: budgeting tools that adapt to your spending patterns, intuitive reminders that anticipate your financial needs, and insights that illuminate your path to financial freedom. "/>
+                                <Span Text="Our mission? To ignite a financial revolution among students, equipping them with the knowledge and tools to sculpt a prosperous tomorrow. "/>
+                                <Span Text="Ready to embark on a journey where financial empowerment meets innovation? Join the ScholarStash movement and unlock the gateway to a brighter financial future." FontAttributes="Italic"/>
+                            </FormattedString>
+                        </Label.FormattedText>
+                    </Label>
+                </VerticalStackLayout>
+            </HorizontalStackLayout>
+
+        </Frame>
+        <Frame Margin="0, 0, 0, 0" BackgroundColor="#F6F6F6" FlexLayout.AlignSelf="Center" HeightRequest="250" BorderColor="#F6F6F6" CornerRadius="20" Opacity="1">
+            <VerticalStackLayout>
+                <Label Margin="0,10,0,0" Text="About me" TextColor="black" FontSize="20" FontAttributes="Bold"/>
+                <Label WidthRequest="285" TextColor="Black" FontSize="17" Margin="0,15,0,0" Text="Muhammad Amirul Hakim is a dedicated software developer with a passion for crafting innovative solutions. With a keen eye for detail and a drive for excellence, he specializes in creating robust and user-friendly applications. Amirul's expertise spans across various technologies, allowing him to adapt to diverse project requirements with ease. Committed to continuous learning and growth, he strives to make a meaningful impact through his work.">
+                    <Label.FormattedText>
+                        <FormattedString>
+                            <Span TextColor="Black" Text="Muhammad Amirul Hakim is a dedicated software developer with a passion for crafting innovative solutions. "/>
+                            <Span TextColor="Black" Text="With a keen eye for detail and a drive for excellence, he specializes in creating robust and user-friendly applications. "/>
+                            <Span TextColor="Black" Text="Amirul's expertise spans across various technologies, allowing him to adapt to diverse project requirements with ease. "/>
+                            <Span TextColor="Black" Text="Committed to continuous learning and growth, he strives to make a meaningful impact through his work."/>
+                        </FormattedString>
+                    </Label.FormattedText>
+                </Label>
+
+            </VerticalStackLayout>
+        </Frame>
+    </VerticalStackLayout>
+</ContentPage>
